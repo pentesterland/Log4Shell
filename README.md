@@ -3,7 +3,7 @@
 - [Technical analysis](#technical-analysis)
 - [Advisories](#advisories)
 - [Videos](#videos)
-- [Intentionally vulnerable apps](intentionally-vulnerable-apps)
+- [Intentionally vulnerable apps](#intentionally-vulnerable-apps)
 - [Tools & Exploits](#tools--exploits)
 - [Tips](#tips)
 - [WAF bypasses](#waf-bypasses)
