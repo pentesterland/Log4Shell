@@ -31,7 +31,7 @@ Term | Description
 - [CVE-2021-44228 on NIST](https://nvd.nist.gov/vuln/detail/CVE-2021-44228)
 
 # Videos
-- [What do you need to know about the log4j (Log4Shell) vulnerability?](https://www.youtube.com/watch?v=oC2PZB5D3Ys) (First 15 min detail offensive side pretty well)
+- [What do you need to know about the log4j (Log4Shell) vulnerability?](https://www.youtube.com/watch?v=oC2PZB5D3Ys) (Great breakdown of the vulnerability in the first 15 min)
 - [Short demo by @MalwareTechBlog](https://www.youtube.com/watch?v=0-abhd-CLwQ)
 - [CVE-2021-44228 - Log4j - MINECRAFT VULNERABLE! (and SO MUCH MORE)](https://www.youtube.com/watch?v=7qoPDq41xhQ)
 - [Log4Shell, The Worst Java Vulnerability in Years](https://www.youtube.com/watch?v=m_AkCbFc8DM)
