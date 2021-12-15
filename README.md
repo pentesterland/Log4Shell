@@ -67,6 +67,3 @@
 - [VCenter](https://twitter.com/w3bd3vil/status/1469814463414951937)
 - [Ghidra](https://twitter.com/zhuowei/status/1469186818549719042)
 - [Apache JAMES SMTP server](https://twitter.com/dlitchfield/status/1469809966785564675)
-
-# TODO
-- Add payloads & headers
