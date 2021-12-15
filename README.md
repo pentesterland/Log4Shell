@@ -111,4 +111,4 @@ Term | Description
 - [Apache JAMES SMTP server](https://twitter.com/dlitchfield/status/1469809966785564675)
 
 # TODO
-Add headers, payloads, data that can be exfiltarted, entry point examples & tools to receive OOB DNS requests.
+Add headers, payloads, data that can be exfiltrated, entry point examples & tools to receive OOB DNS requests.
