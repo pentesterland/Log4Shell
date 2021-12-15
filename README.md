@@ -48,7 +48,7 @@ Term | Description
 - [JNDI-Exploit-Kit](https://github.com/pimps/JNDI-Exploit-Kit)
 - [Thinkst Canary](https://twitter.com/thinkstcanary/status/1469439743905697797)
 - [Huntress Log4Shell Tester](https://log4shell.huntress.com)
-- [log4shell.nse](https://github.com/righel/log4shell_nse): Nmap NSE script that injects a Huntress/CanaryTokens/custom log4shell payload in HTTP requests described by JSON templates
+- [log4shell.nse](https://github.com/righel/log4shell_nse) (Nmap NSE script that injects a Huntress/CanaryTokens/custom log4shell payload in HTTP requests described by JSON templates)
 - [@SilentSignalHU’s Log4Shell Scanner (Burp extension)](https://twitter.com/Burp_Suite/status/1470418532475314177)
 - [ActiveScan++](https://twitter.com/albinowax/status/1469258291616403457)
 - [fullhunt/log4j-scan](https://github.com/fullhunt/log4j-scan) & [How to combine it with Amass for higher coverage](https://twitter.com/jeff_foley/status/1470463924260777985)
