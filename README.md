@@ -1,8 +1,14 @@
 # TL;DR
 
-![bugcrowd-glossary](https://user-images.githubusercontent.com/35920302/146174656-683a34c6-082f-4ba1-afd7-491b3356dbda.png)
 
-[Source: CVE-2021-44228 Log4j (and Log4Shell) Executive Explainer by cje@bugcrowd](https://www.slideshare.net/caseyjohnellis/cve202144228-log4j-and-log4shell-executive-explainer-by-cjebugcrowd)
+---|---
+Log4j | The vulnerable Java Library
+JndiLookup | The vulnerable part of Log4j
+CVE-2021-442228 | The first vulnerability
+Log4Shell | The exploit developped to attack this vulnerability
+CVE-2021-45046 | The second vulnerability
+
+[Source: CVE-2021-44228 Log4j (and Log4Shell) Executive Explainer by cje@bugcrowd](https://www.slideshare.net/caseyjohnellis/cve202144228-log4j-and-log4shell-executive-explainer-by-cjebugcrowd) (modified to add the second CVE)
 
 ![Log4Shell-timeline](https://user-images.githubusercontent.com/35920302/146178407-14f764fa-a2f9-4024-9265-0aeaa1a03599.png)
 
