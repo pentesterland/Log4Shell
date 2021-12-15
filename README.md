@@ -2,11 +2,11 @@
 
 Term | Description
 ---|---
-Log4j | The vulnerable Java Library
-JndiLookup | The vulnerable part of Log4j
-CVE-2021-442228 | The first vulnerability
-Log4Shell | The exploit developped to attack this vulnerability
-CVE-2021-45046 | The second vulnerability
+**Log4j** | The vulnerable Java Library
+**JndiLookup** | The vulnerable part of Log4j
+**CVE-2021-442228** | The initial vulnerability
+**Log4Shell** | The exploit developped to attack this vulnerability
+**CVE-2021-45046** | The second vulnerability (bypass that causes denial of service)
 
 [Source: CVE-2021-44228 Log4j (and Log4Shell) Executive Explainer by cje@bugcrowd](https://www.slideshare.net/caseyjohnellis/cve202144228-log4j-and-log4shell-executive-explainer-by-cjebugcrowd) (modified to add the second CVE)
 
@@ -45,6 +45,7 @@ CVE-2021-45046 | The second vulnerability
 # Tools & Exploits
 - [woodpecker-appstore/log4j-payload-generator](https://github.com/woodpecker-appstore/log4j-payload-generator)
 - [tangxiaofeng7/CVE-2021-44228-Apache-Log4j-Rce](https://github.com/tangxiaofeng7/CVE-2021-44228-Apache-Log4j-Rce)
+- [JNDI-Exploit-Kit](https://github.com/pimps/JNDI-Exploit-Kit)
 - [Thinkst Canary](https://twitter.com/thinkstcanary/status/1469439743905697797)
 - [Huntress Log4Shell Tester](https://log4shell.huntress.com)
 - [log4shell.nse](https://github.com/righel/log4shell_nse): Nmap NSE script that injects a Huntress/CanaryTokens/custom log4shell payload in HTTP requests described by JSON templates
@@ -68,12 +69,6 @@ CVE-2021-45046 | The second vulnerability
 - [Attack path works in *ANY* java version](https://twitter.com/marcioalm/status/1470361495405875200)
 - [If you’re scanning for Log4Shell at scale, you can easily determine which host is pinging back by adding it to the start of your callback hostname](https://twitter.com/hakluke/status/1469875175839584257)
 
-# Headers
-[TODO]
-
-# Payloads
-[TODO]
-
 # WAF bypasses
 - <https://twitter.com/wugeej/status/1469982901412728832>
 - <https://twitter.com/BountyOverflow/status/1470001858873802754>
@@ -81,7 +76,7 @@ CVE-2021-45046 | The second vulnerability
 - <https://twitter.com/ymzkei5/status/1469765165348704256>
 - <https://twitter.com/wireghoul/status/1469473975449255941>
 - <https://twitter.com/Rezn0k/status/1469523006015750146>
-- 
+- <https://twitter.com/Laughing_Mantis/status/1470526083271303172>
 
 # Mega threads
 - [Reddit mega thread curated by NCC Group](https://www.reddit.com/r/blueteamsec/comments/rd38z9/log4j_0day_being_exploited/)
@@ -89,7 +84,7 @@ CVE-2021-45046 | The second vulnerability
 # Remediation
 - [Guide: How To Detect and Mitigate the Log4Shell Vulnerability (CVE-2021-44228)](https://www.lunasec.io/docs/blog/log4j-zero-day-mitigation-guide/)
 
-# Some impacted apps/vendors
+# Some vulnerable apps/vendors
 - [YfryTchsGD/Log4jAttackSurface](https://github.com/YfryTchsGD/Log4jAttackSurface)
   - <https://twitter.com/bl4sty/status/1469259842112086024>
   - [Log4j zero-day gets security fix just as scans for vulnerable systems ramp up](https://therecord.media/log4j-zero-day-gets-security-fix-just-as-scans-for-vulnerable-systems-ramp-up/)
@@ -100,3 +95,6 @@ CVE-2021-45046 | The second vulnerability
 - [VCenter](https://twitter.com/w3bd3vil/status/1469814463414951937)
 - [Ghidra](https://twitter.com/zhuowei/status/1469186818549719042)
 - [Apache JAMES SMTP server](https://twitter.com/dlitchfield/status/1469809966785564675)
+
+# TODO
+Add headers, payloads, data that can be exfiltarted, entry point examples & tools to receive OOB DNS requests.
