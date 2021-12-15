@@ -1,6 +1,6 @@
 # TL;DR
 
-
+Term | Description
 ---|---
 Log4j | The vulnerable Java Library
 JndiLookup | The vulnerable part of Log4j
