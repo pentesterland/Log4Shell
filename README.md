@@ -86,8 +86,6 @@ Term | Description
 
 # Some vulnerable apps/vendors
 - [YfryTchsGD/Log4jAttackSurface](https://github.com/YfryTchsGD/Log4jAttackSurface)
-  - <https://twitter.com/bl4sty/status/1469259842112086024>
-  - [Log4j zero-day gets security fix just as scans for vulnerable systems ramp up](https://therecord.media/log4j-zero-day-gets-security-fix-just-as-scans-for-vulnerable-systems-ramp-up/)
 - [20211210-TLP-WHITE_LOG4J.md](https://gist.github.com/SwitHak/b66db3a06c2955a9cb71a8718970c592)
 - [NCSC-NL/log4shell](https://github.com/NCSC-NL/log4shell/blob/main/software/README.md)
 - [ZAP](https://www.zaproxy.org/blog/2021-12-10-zap-and-log4shell/)
