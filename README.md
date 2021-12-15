@@ -1,15 +1,19 @@
 # TL;DR
 
 ![bugcrowd-glossary](https://user-images.githubusercontent.com/35920302/146174656-683a34c6-082f-4ba1-afd7-491b3356dbda.png)
-[CVE-2021-44228 Log4j (and Log4Shell) Executive Explainer by cje@bugcrowd](https://www.slideshare.net/caseyjohnellis/cve202144228-log4j-and-log4shell-executive-explainer-by-cjebugcrowd)
+
+[Source: CVE-2021-44228 Log4j (and Log4Shell) Executive Explainer by cje@bugcrowd](https://www.slideshare.net/caseyjohnellis/cve202144228-log4j-and-log4shell-executive-explainer-by-cjebugcrowd)
 
 ![Log4Shell-timeline](https://user-images.githubusercontent.com/35920302/146178407-14f764fa-a2f9-4024-9265-0aeaa1a03599.png)
+
 [Source: cutekernel.github.io](https://cutekernel.github.io/technical-illustrations/cves-2021.html)
 
 ![log4shell png](https://user-images.githubusercontent.com/35920302/146170447-915c1f09-8b34-4390-8f1b-95f9cf892c7a.jpeg)
+
 [Source: musana.net](https://musana.net/2021/12/13/log4shell-Quick-Guide/)
 
 ![log4j_attack](https://user-images.githubusercontent.com/35920302/146178704-84116a6f-1016-43c4-b1f3-0552dfa0fb03.png)
+
 [Source: govcert.ch](https://www.govcert.ch/blog/zero-day-exploit-targeting-popular-java-library-log4j/)
 
 # Technical analysis
