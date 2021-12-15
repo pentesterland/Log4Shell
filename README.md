@@ -24,16 +24,13 @@
 - [Thinkst Canary](https://twitter.com/thinkstcanary/status/1469439743905697797)
 - [Huntress Log4Shell Tester](https://log4shell.huntress.com)
 - [log4shell.nse](https://github.com/righel/log4shell_nse): Nmap NSE script that injects a Huntress/CanaryTokens/custom log4shell payload in HTTP requests described by JSON templates
-- [@SilentSignalHU’s Log4Shell Scanner as a Burp extension](https://twitter.com/Burp_Suite/status/1470418532475314177) & [silentsignal/burp-log4shell](https://github.com/silentsignal/burp-log4shell) (Burp extension)
-- [Log4Shell detection to ActiveScan++](https://twitter.com/albinowax/status/1469258291616403457)
+- [@SilentSignalHU’s Log4Shell Scanner (Burp extension)](https://twitter.com/Burp_Suite/status/1470418532475314177)
+- [ActiveScan++](https://twitter.com/albinowax/status/1469258291616403457)
 - [fullhunt/log4j-scan](https://github.com/fullhunt/log4j-scan)
 - [Burp Bounty Pro Profile](https://twitter.com/BurpBounty/status/1469249786092085249)
 - [whwlsfb/Log4j2Scan](https://github.com/whwlsfb/Log4j2Scan) (Passive Scanner plugin for Burp)
-- [Semgrep rules](https://github.com/returntocorp/semgrep-rules/tree/develop/java/log4j/security)
+- [Semgrep rule](https://semgrep.dev/r?q=log4j-message-lookup-injection)
 - [CodeQL query](https://github.com/cldrn/codeql-queries/blob/master/log4j-injection.ql)
-  - <https://twitter.com/pwntester/status/1469307027067396106>
-
-- [log4shell-detector](https://github.com/Neo23x0/log4shell-detector)
 - [Nuclei template](https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-44228.yaml)
 
 # Tips
