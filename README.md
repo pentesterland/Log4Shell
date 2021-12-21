@@ -73,8 +73,8 @@ CVE | Vulnerability type | Affected Log4j versions | Exploitable in default conf
 - [Log4Shell — Simple Technical Explanation of the Exploit](https://inonst.medium.com/log4shell-simple-techincal-explanation-of-the-exploit-a5a3dd1918ec)
 
 # Videos
-- [Log4j RCE vulnerability explained with bypass for the initial fix (CVE-2021-44228, CVE-2021-45046)](https://www.youtube.com/watch?v=OS5lY3-M6tw)
 - [Hackers vs. Developers // CVE-2021-44228 Log4Shell](https://www.youtube.com/watch?v=w2F67LbEtnk)
+- [Log4j RCE vulnerability explained with bypass for the initial fix (CVE-2021-44228, CVE-2021-45046)](https://www.youtube.com/watch?v=OS5lY3-M6tw)
 - [What do you need to know about the log4j (Log4Shell) vulnerability?](https://www.youtube.com/watch?v=oC2PZB5D3Ys) (Great breakdown of the vulnerability in the first 15 min)
 - [Short demo by @MalwareTechBlog](https://www.youtube.com/watch?v=0-abhd-CLwQ)
 - [CVE-2021-44228 - Log4j - MINECRAFT VULNERABLE! (and SO MUCH MORE)](https://www.youtube.com/watch?v=7qoPDq41xhQ)
@@ -142,6 +142,7 @@ CVE | Vulnerability type | Affected Log4j versions | Exploitable in default conf
 - [Attack path works in *ANY* java version](https://twitter.com/marcioalm/status/1470361495405875200)
 - [If you’re scanning for Log4Shell at scale, you can easily determine which host is pinging back by adding it to the start of your callback hostname](https://twitter.com/hakluke/status/1469875175839584257)
 - [Examples of non-default vulnerable patterns](https://twitter.com/pwntester/status/1471511483422961669)
+- [Polymorphic Log4J exploit that is a valid JSON REST API request](https://twitter.com/d0znpp/status/1471207731327483905)
 
 # WAF bypass
 - [Puliczek/CVE-2021-44228-PoC-log4j-bypass-words](https://github.com/Puliczek/CVE-2021-44228-PoC-log4j-bypass-words)
