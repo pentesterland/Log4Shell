@@ -90,6 +90,7 @@ CVE | Vulnerability type | Affected Log4j versions | Exploitable in default conf
 - [Cyb3rWard0g/log4jshell-lab](https://github.com/Cyb3rWard0g/log4jshell-lab)
 
 # Tools & Exploits
+- [google/log4jscanner](https://github.com/google/log4jscanner)
 - [Log4Shell Everywhere](https://portswigger.net/bappstore/186be35f6e0d418eb1f6ecf1cc66a74d)
 - [Ch0pin/log4JFrida](https://github.com/Ch0pin/log4JFrida)
 - [dwisiswant0/look4jar](https://github.com/dwisiswant0/look4jar)
