@@ -32,6 +32,7 @@ CVE | Vulnerability type | Affected Log4j versions | Exploitable in default conf
 **CVE-2021-45046** | Denial of Service (DoS) and RCE | 2.0 through 2.15.0	| No
 **CVE-2021-4104**	| RCE | 1.2* | No
 **CVE-2021-45105** | Denial of Service (DoS) | 2.0-beta9 to 2.16.0 | No
+**CVE-2021-44832**	| RCE | 2.0-beta7 through 2.17.0 (excluding security fix releases 2.3.2 and 2.12.4) | No
 
 * CVE-2021-4104 will not be patched, as the Log4j 1.x branch has reached end-of-life
 
@@ -52,7 +53,7 @@ CVE | Vulnerability type | Affected Log4j versions | Exploitable in default conf
 ![LOG4j-flyer](https://user-images.githubusercontent.com/35920302/146976304-7c7e48b1-75c6-431e-bc77-408928c8ece9.png)
 [Source: Security Zines](https://securityzines.com/flyers/log4j.html)
 
-# Technical analysis
+# Articles & Technical analysis
 - [Log4Shell: RCE 0-day exploit found in log4j 2, a popular Java logging package](https://www.lunasec.io/docs/blog/log4j-zero-day/)
 - [Log4j Analysis: More JNDI Injection](https://y4y.space/2021/12/10/log4j-analysis-more-jndi-injection/)
 - [Rapid7 analysis](https://attackerkb.com/topics/in9sPR2Bzt/cve-2021-44228-log4shell/rapid7-analysis): Includes PoCs for Apache Struts2, VMWare VCenter, Apache James, Apache Solr, Apache Druid, Apache JSPWiki and Apache OFBiz
@@ -62,10 +63,17 @@ CVE | Vulnerability type | Affected Log4j versions | Exploitable in default conf
 - [Inside the code: How the Log4Shell exploit works](https://news.sophos.com/en-us/2021/12/17/inside-the-code-how-the-log4shell-exploit-works/) & [Log4Shell Hell: anatomy of an exploit outbreak](https://news.sophos.com/en-us/2021/12/12/log4shell-hell-anatomy-of-an-exploit-outbreak/)
 - [Log4Shell Update: Severity Upgraded 3.7 -> 9.0 for Second log4j Vulnerability (CVE-2021-45046)](https://www.lunasec.io/docs/blog/log4j-zero-day-severity-of-cve-2021-45046-increased/)
 - [The Subsequent Waves of log4j Vulnerabilities Aren’t as Bad as People Think](https://danielmiessler.com/blog/the-second-wave-of-log4j-vulnerabilities-werent-nearly-as-bad-as-people-think/)
+- [Examining Log4j Vulnerabilities in Connected Cars and Charging Stations](https://www.trendmicro.com/en_us/research/21/l/examining-log4j-vulnerabilities-in-connected-cars.html)
+- [Another Log4j on the fire: Unifi](https://www.sprocketsecurity.com/blog/another-log4j-on-the-fire-unifi)
+- [How to exploit Log4j vulnerabilities in VMWare vCenter](https://www.sprocketsecurity.com/blog/how-to-exploit-log4j-vulnerabilities-in-vmware-vcenter)
+- [How I built the PoC for the Log4j zero-day security vulnerability](https://blog.melbadry9.xyz/write-ups/fuzzing/creating-sharing-log4shell-poc)
+- [Google: Understanding the Impact of Apache Log4j Vulnerability](https://security.googleblog.com/2021/12/understanding-impact-of-apache-log4j.html)
 
 # Advisories
 - [Apache Log4j Security Vulnerabilities](https://logging.apache.org/log4j/2.x/security.html)
 - [CVE-2021-44228 on NIST](https://nvd.nist.gov/vuln/detail/CVE-2021-44228)
+- [CVE-2021-44832 – Apache Log4j 2.17.0 Arbitrary Code Execution Via JDBCAppender Datasource Element](https://checkmarx.com/blog/cve-2021-44832-apache-log4j-2-17-0-arbitrary-code-execution-via-jdbcappender-datasource-element/)
+- [Log4J 2.15 TOCTOU Vulnerability Illustrated by GoSecure Researchers](https://www.gosecure.net/blog/2021/12/21/log4j-2-15-toctou-vulnerability-illustrated-by-gosecure-researchers/)
 
 # Tutorials
 - [A Detailed Guide on Log4J Penetration Testing](https://www.hackingarticles.in/a-detailed-guide-on-log4j-penetration-testing/)
@@ -117,6 +125,9 @@ CVE | Vulnerability type | Affected Log4j versions | Exploitable in default conf
 - [adilsoybali/Log4j-RCE-Scanner](https://github.com/adilsoybali/Log4j-RCE-Scanner)
 - [JNDI injector for burp pro](https://twitter.com/Kuggofficial/status/1470503381143859207)
 - [alexandre-lavoie/python-log4rce](https://github.com/alexandre-lavoie/python-log4rce)
+- [Log4jUnifi](https://github.com/puzzlepeaches/Log4jUnifi)
+- [Log4jCenter](https://github.com/puzzlepeaches/Log4jCenter)
+- [Exploiting CVE-2021-44228 using PDFs as delivery channel - PoC](https://github.com/eelyvy/log4jshell-pdf)
 
 ## DNS loggers
 - [dns-exfil](https://github.com/KarimPwnz/dns-exfil)
@@ -151,6 +162,7 @@ CVE | Vulnerability type | Affected Log4j versions | Exploitable in default conf
 - [Log4j Lookups](https://logging.apache.org/log4j/2.x/manual/lookups.html)
 
 ## Bypass examples
+- [AWS/Cloudfront WAF bypass](https://twitter.com/naglinagli/status/1474511213350600707)
 - <https://twitter.com/wugeej/status/1469982901412728832>
 - <https://twitter.com/BountyOverflow/status/1470001858873802754>
 - <https://twitter.com/h4x0r_dz/status/1469663187079417857>
@@ -158,6 +170,8 @@ CVE | Vulnerability type | Affected Log4j versions | Exploitable in default conf
 - <https://twitter.com/wireghoul/status/1469473975449255941>
 - <https://twitter.com/Rezn0k/status/1469523006015750146>
 - <https://twitter.com/Laughing_Mantis/status/1470526083271303172>
+- <https://twitter.com/11xuxx/status/1473777341201625088>
+- 
 
 # Awesome lists
 - [Reddit mega thread curated by NCC Group](https://www.reddit.com/r/blueteamsec/comments/rd38z9/log4j_0day_being_exploited/)
@@ -165,6 +179,7 @@ CVE | Vulnerability type | Affected Log4j versions | Exploitable in default conf
 - [NCSC-NL/log4shell](https://github.com/NCSC-NL/log4shell)
 
 # Remediation
+- [CISA Alert (AA21-356A): Mitigating Log4Shell and Other Log4j-Related Vulnerabilities](https://www.cisa.gov/uscert/ncas/alerts/aa21-356a)
 - [Guide: How To Detect and Mitigate the Log4Shell Vulnerability (CVE-2021-44228)](https://www.lunasec.io/docs/blog/log4j-zero-day-mitigation-guide/)
 
 ![Shield-Log4shell-v1](https://user-images.githubusercontent.com/35920302/146975230-436bef91-ad71-4bde-9b6c-3875c49274f5.png)
